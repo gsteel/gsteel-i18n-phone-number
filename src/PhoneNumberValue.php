@@ -50,6 +50,10 @@ final class PhoneNumberValue
 
     public const TYPE_ANY = self::TYPE_KNOWN | self::TYPE_UNKNOWN;
 
+    public const TYPE_RECOMMENDED = self::TYPE_FIXED
+                                  | self::TYPE_MOBILE
+                                  | self::TYPE_VOIP;
+
     /** @internal \Laminas\I18n */
     public const TYPE_MAP = [
         PhoneNumberType::FIXED_LINE           => self::TYPE_FIXED,
